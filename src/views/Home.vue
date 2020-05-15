@@ -65,6 +65,7 @@ export default {
     },
     handleUploadImage (ev) {
       const files = ev.target.files
+      console.log(files[0])
       if (!files.length) return
 
       const reader = new FileReader()
